@@ -1,0 +1,492 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #81e3f5;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px 20px;
+    position: relative;
+}
+
+#inicio {
+    position: relative;
+    height: 45vh;
+    background-image: url("img/inicio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 200px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#inicio h1 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    top: 50%;
+    font-size: 50px;
+    font-family: "Garmitextrabold";
+    text-transform: uppercase;
+    color: #003366;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.proverbio {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+}
+
+#vision-mision {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+}
+
+.mision-vision-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.mision-vision-container .contenido {
+    text-align: left;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mision-vision-container .contenido h2 {
+    font-size: 3.2em;
+    text-align: left;
+    color: #003366;
+    margin-bottom: 25px;
+}
+
+.mision-vision-container .contenido h3 {
+    font-size: 2em;
+    color: #007bff;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.mision-vision-container .contenido p {
+    font-size: 1.4em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.mision-vision-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    height: 700px; 
+}
+
+#carrera {
+    padding: 60px 20px;
+    background-color: #81e3f5;
+}
+
+#carrera .mision-vision-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#carrera .mision-vision-container .carrera-info {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    text-align: left;
+}
+
+#carrera .mision-vision-container .carrera-info h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+#carrera .mision-vision-container .carrera-info h3 {
+    color: #007bff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#carrera .mision-vision-container .carrera-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#carrera .mision-vision-container .carrera-info ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+#carrera .mision-vision-container .carrera-info ul li {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+#carrera .mision-vision-container .carrera-info .beneficios-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+
+#carrera .mision-vision-container .carrera-info .beneficios-lista li::before {
+    content: "• ";
+    color: #007bff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#carrera .mision-vision-container img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 20px;
+}
+
+.videos-container.top-videos {
+    margin-top: 0;
+}
+
+.video-item {
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video-item h3 {
+    color: #003366;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#instalaciones {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+}
+
+#instalaciones .mision-vision-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+    overflow: hidden;
+}
+
+#instalaciones .mision-vision-container .contenido {
+    text-align: left;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.slider-container {
+    width: 50%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation-name: cambiarImagen;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.slider-container .slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slider-container .slide:nth-child(2) {
+    animation-delay: 3.33s;
+}
+
+.slider-container .slide:nth-child(3) {
+    animation-delay: 6.66s;
+}
+
+@keyframes cambiarImagen {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    40% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+#instalaciones .mision-vision-container > img {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mision-vision-container,
+    #carrera .mision-vision-container,
+    #instalaciones .mision-vision-container {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+    }
+
+    .mision-vision-container > div,
+    .mision-vision-container > img,
+    #carrera .mision-vision-container .carrera-info,
+    .video-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #carrera .mision-vision-container img,
+    #instalaciones .mision-vision-container .contenido,
+    .slider-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #vision-mision .mision-vision-container .contenido h2,
+    #instalaciones .mision-vision-container .contenido h2 {
+        font-size: 2.8em;
+    }
+
+    #vision-mision .mision-vision-container .contenido h3 {
+        font-size: 1.8em;
+    }
+
+    #vision-mision .mision-vision-container .contenido p,
+    #instalaciones .mision-vision-container .contenido ul {
+        font-size: 1.2em;
+    }
+}
+
+#contacto {
+    padding: 40px 20px;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.copyright {
+    flex-basis: 100%;
+    margin: 5px 0;
+}
+
+.footer-info, .footer-credits {
+    margin: 5px 0;
+    text-align: left;
+}
+
+.footer-info p, .footer-credits p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.pensum-container {
+    background-color: #fff;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pensum-container h2 {
+    color: #003366;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.pensum-comparativo {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    text-align: left;
+}
+
+.pensum-cuarto, .pensum-quinto {
+    width: calc(50% - 15px);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.pensum-comparativo h3 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.pensum-comparativo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pensum-comparativo ul li {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+#circuito-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#circuito-video .video-item {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#circuito-video .video-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+#circuito-video .video-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    #circuito-video .video-item {
+        width: 95%;
+    }
+}
+
+.video-grande {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+}
+
+@media (max-width: 768px) {
+    .video-grande {
+        max-height: none;
+    }
+}
